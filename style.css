@@ -1,0 +1,29 @@
+body{
+  height: 100vh;
+  background-image: url("background.png");
+  background-size: auto 100%;
+  overflow: hidden;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.long-div{
+  height: 1px;
+  display: block;
+  width: 1000%;
+}
+
+.square{
+  background-color: #f00;
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
