@@ -12,18 +12,51 @@ body{
 }
 
 .long-div{
-  height: 1px;
+  min-height: 1px;
+  height: 100%;
   display: block;
   width: 1000%;
 }
 
+.small-container{
+  float: left;
+  width: calc(100vw - 16px - 40px);
+  padding: 20px;
+  height: calc(100% - 40px);
+}
+
+.text{
+  float: left;
+  width: calc(100vw - 16px - 40px);
+  /*margin-left: 300vw;*/
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+
+}
+
 .square{
+  background-color: #00f;
+  height: 100px;
+  width: 50%;
+  display: block;
+  margin: auto;
+  position: relative;;
+  top: 50%;
+  transform: translateY(100%);
+  cursor: pointer;
+}
+
+.actor{
   background-color: #f00;
   height: 100px;
   width: 100px;
   display: block;
   margin: auto;
-  position: relative;
+  position: fixed;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
 }
