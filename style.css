@@ -15,7 +15,7 @@ body{
   min-height: 1px;
   height: 100%;
   display: block;
-  width: 1000%;
+  width: 500%;
 }
 
 .small-container{
@@ -45,14 +45,13 @@ body{
   position: relative;;
   top: 50%;
   transform: translateY(100%);
-  cursor: pointer;
 }
 
 .actor{
   background-color: #f00;
   height: 100px;
   width: 100px;
-  display: block;
+  display: none;
   margin: auto;
   position: fixed;
   left: 50%;
