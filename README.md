@@ -16,15 +16,16 @@ To complete the tutorial you'll want to add a `script.js` file and have this cod
   <summary><b>script.js</b></summary>
   <pre>
 
-    let body = document.querySelector('body')
-    let container = document.querySelector('.container')
+    const body = document.querySelector('body')
+    const container = document.querySelector('.container')
+    const text = document.querySelector('.text')
 
-    let scrollHandler = e => {
+    const scrollHandler = e => {
       const scrollPos = e.target.scrollLeft
       body.style.backgroundPositionX = (-0.1*scrollPos) + "px";
     }
 
-    let keyHandler = e => {
+    const keyHandler = e => {
       const width = e.target.clientWidth
       const currentPage = Math.floor(container.scrollLeft/width);
 
@@ -40,8 +41,13 @@ To complete the tutorial you'll want to add a `script.js` file and have this cod
       }
     }
 
+    const dataHandler = data => text.innerHTML = data[0].body
+
     container.addEventListener('scroll', scrollHandler)
     body.addEventListener('keydown', keyHandler)
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(r => r.json())
+      .then(dataHandler)
 
   </pre>
 </details></p>
