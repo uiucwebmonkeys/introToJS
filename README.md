@@ -8,6 +8,15 @@ For this tutorial, we will:
 * add key event listeners for left and right buttons
 * do a fetch to replay the "important text
 
+## demos
+
+[before](demos/before.mov)
+
+[after](demos/after.mov)
+
+
+## instructions
+
 To complete the tutorial you'll want to add a `script.js` file and have this code in there. 
 
 (try following the tutorial without looking at the answer code below)
